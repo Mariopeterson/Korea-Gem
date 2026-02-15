@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Korea Local Finder (Naver Blog)</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Korea Local Finder</h1>
+      <p>
+        Type in English → app searches in Korean on Naver Blog → ranks by popularity proxy and
+        translates the best results back to English.
+      </p>
+
+      <form id="search-form">
+        <input id="query" placeholder="e.g. best romantic cafes" required />
+
+        <select id="city">
+          <option value="seoul">Seoul</option>
+          <option value="busan">Busan</option>
+        </select>
+
+        <div class="categories">
+          <label><input type="checkbox" value="restaurants" checked />Restaurants</label>
+          <label><input type="checkbox" value="cafes" checked />Cafes</label>
+          <label><input type="checkbox" value="bars" checked />Bars</label>
+          <label><input type="checkbox" value="activities" checked />Activities</label>
+          <label><input type="checkbox" value="gyms" checked />Gyms</label>
+        </div>
+
+        <button type="submit">Find popular spots</button>
+      </form>
+
+      <section id="status" class="status"></section>
+      <section id="results" class="results"></section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
